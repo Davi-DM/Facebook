@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar{
@@ -42,13 +44,11 @@ body{
 
 .main_container .search_area img.icon_logoface{
     width: 40px;
-    height: 39.78px;
 
     padding-top: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 15px;
-    cursor: pointer;
 }
 
 .main_container .search_area img.icon_logoface:hover{
@@ -95,7 +95,7 @@ input.search_bar:hover{
     position: static;
 }
 
-div .box_icons{
+.box_icons{
     width: 99.33px;
     height: 55.97px;
 
@@ -109,7 +109,7 @@ div .box_icons{
 }
 
 .box_icons:hover{
-    color: lightblue;
+    color: #057BF8;
     cursor: pointer;
     background-color: #dddfe2;
 }
@@ -125,6 +125,54 @@ svg{
 
     
     border-radius: 50%; 
+}
+
+.tooltip_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    display: block;
+}
+
+.tooltip_box span.tooltiptext{
+    visibility: hidden;
+    
+    height: 25px;
+    width: 120px;
+
+    background-color: rgb(43, 40, 40);
+
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+    margin-top: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip_box span.tooltiptext#tooltip-watch{
+    width: 60px;
+    margin-left: 30px;
+}
+
+.tooltip_box:hover span.tooltiptext{
+    visibility: visible;
+    opacity: 1;
 }
 
 div .main_settings{
@@ -155,7 +203,7 @@ div .main_settings{
 }
 
 .circle_icons:hover{
-    color: lightblue;
+    color: #057BF8;
     cursor: pointer;
     background-color: #dddfe2;
 }
@@ -175,7 +223,7 @@ div .main_settings{
     height: 200vh;
     width: 33.33%;
     
-    background-color: black;
+    background-color: rgb(179, 112, 112);
 }
 
 .user-feed{
