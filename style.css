@@ -14,7 +14,7 @@ body{
     left: 0;
 
     margin-bottom: 10px;
-    box-shadow: 1px 2px 8px 1px rgba(0,0,0,0.10);
+    box-shadow: 1px 2px 8px 1px rgba(0,0,0,0.18);
 
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ body{
     width: 100%;
     height: 100%;
    
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 
@@ -33,13 +33,26 @@ body{
     padding: 0;
 }
 
-.search_area{
+div.navbar div.main_container div.search_area{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 111.98;
-    height: 55.97px;
+    width: 320px;
+    height: 56px;
+}
+
+.facebooklogo{
+    width: 40px;
+    height: 39.78px;
+ 
+    margin-left: 15px;
+
+    border-radius: 50%;
+}
+
+.facebooklogo:hover{
+    cursor: pointer;
 }
 
 .main_container .search_area img.icon_logoface{
@@ -51,11 +64,46 @@ body{
     padding-left: 15px;
 }
 
-.main_container .search_area img.icon_logoface:hover{
-    cursor: pointer;
+div.search_input{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.main_container .search_area img.magnifying_glass{
+img.magnifying_glass{
+    position: absolute;
+    /* display: inline; */
+
+    padding: 13px 0px 12px 24px;
+    min-width: 20px;
+
+    width: 12px;
+    height: 24px;
+    
+}
+
+input.search_bar{
+    width: 216px;
+    height: 39.78px;
+    
+    border-radius: 200px;
+    border: none;
+    outline: none;
+
+    display: inline;
+
+    /* box-sizing: content-box; */
+    
+    background-color: rgb(240, 242, 245);
+    
+    padding: 5px 10px 5px 45px;
+    margin: 10px 10px 10px 10px;
+}
+
+/* .main_container .search_area img.magnifying_glass{
     position: absolute;
 
     padding: 18px 0px 18px 80px;
@@ -63,9 +111,9 @@ body{
 
     width: 12px;
     height: 24px;
-}
+} */
 
-input.search_bar{
+/* input.search_bar{
     width: 185px;
     height: 30px;
     
@@ -73,21 +121,23 @@ input.search_bar{
     border: none;
     outline: none;
 
+    display: inline;
+
     box-sizing: content-box;
     
     background-color: rgb(240, 242, 245);
     
     padding: 5px 10px 5px 45px;
     margin: 10px 10px 10px 10px;
-}   
+}    */
 
 input.search_bar:hover{
     cursor: pointer;
 }
 
 .interaction_area{
-    width: 978px;
-    height: 55.97px;
+    width: 605px;
+    height: 56px;
 
     display: flex;
     align-items: center;
@@ -97,9 +147,9 @@ input.search_bar:hover{
 
 .box_icons{
     width: 99.33px;
-    height: 55.97px;
+    height: 56px;
 
-    border-radius: 15%;
+    border-radius: 10%;
 
     margin: 0 10px 0 10px;
     
@@ -111,7 +161,7 @@ input.search_bar:hover{
 .box_icons:hover{
     color: #057BF8;
     cursor: pointer;
-    background-color: #dddfe2;
+    background-color: #f0f0f0;
 }
 
 svg{
@@ -119,11 +169,15 @@ svg{
     height: 27.98px;
 }
 
+svg#facelogo{
+    width: 40px;
+    height: 39.78px;
+}
+
 .circle_icons .profile_picture{
     width: 39.98px;
     height: 39.98px;
 
-    
     border-radius: 50%; 
 }
 
@@ -143,7 +197,11 @@ svg{
     height: 25px;
     width: 120px;
 
-    background-color: rgb(43, 40, 40);
+    background-color: rgba(0, 0, 0, 0.60);
+
+    -webkit-box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
+    box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
 
     font-size: 15px;
     color: #fff;
@@ -151,7 +209,6 @@ svg{
     border-radius: 10px;
     padding: 5px 0;
   
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
 
@@ -165,26 +222,87 @@ svg{
     transition: opacity 0.5s;
 }
 
-.tooltip_box span.tooltiptext#tooltip-watch{
-    width: 60px;
-    margin-left: 30px;
-}
-
 .tooltip_box:hover span.tooltiptext{
     visibility: visible;
     opacity: 1;
 }
 
+.tooltip_box span.tooltiptext#tooltip-watch{
+    width: 60px;
+    margin-left: 30px;
+}
+
+.tooltip_box span.tooltiptext#tooltip-games{
+    width: 60px;
+    margin-left: 30px;
+}
+
+.tooltip_box span.tooltiptext#tooltip-feeds{
+    width: 60px;
+    margin-left: 30px;
+}
+
+.tooltip_circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    display: block;
+}
+
+.tooltip_circle span.tooltiptext{
+    visibility: hidden;
+    
+    height: 25px;
+    width: 120px;
+
+    background-color: rgba(0, 0, 0, 0.60);
+
+    -webkit-box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
+    box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
+
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+
+    margin-top: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip_circle:hover span.tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip_circle span.tooltiptext#tooltip-menu{
+    width: 60px;
+    margin-left: 30px;
+}
+
+
 div .main_settings{
-    width: 203.81px;
-    height: 55.97px;
+    width: 204x;
+    height: 56px;
 
     margin: 0 15px 0 0;
 
     display: flex;
     align-items: center;
     justify-content:center;
-    
 }
 
 .circle_icons{
@@ -238,6 +356,14 @@ div .main_settings{
     width: 33.33%;
 
     background-color: red;
+}
+
+
+
+
+
+.xe3v8dz{
+    fill: white;
 }
 
 
