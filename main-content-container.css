@@ -1,0 +1,31 @@
+.main-content-container{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.user-details{
+    height: 100px;
+    width: 33.33%;
+    
+    background-color: black;
+}
+
+.user-feed{
+    height: 100px;
+    width: 33.33%;
+
+    background-color: gray;
+}
+
+.user-message{
+    height: 100px;
+    width: 33.33%;
+
+    background-color: red;
+}
