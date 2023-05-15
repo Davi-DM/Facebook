@@ -95,41 +95,12 @@ input.search_bar{
 
     display: inline;
 
-    /* box-sizing: content-box; */
     
     background-color: rgb(240, 242, 245);
     
     padding: 5px 10px 5px 45px;
     margin: 10px 10px 10px 10px;
 }
-
-/* .main_container .search_area img.magnifying_glass{
-    position: absolute;
-
-    padding: 18px 0px 18px 80px;
-    min-width: 20px;
-
-    width: 12px;
-    height: 24px;
-} */
-
-/* input.search_bar{
-    width: 185px;
-    height: 30px;
-    
-    border-radius: 200px;
-    border: none;
-    outline: none;
-
-    display: inline;
-
-    box-sizing: content-box;
-    
-    background-color: rgb(240, 242, 245);
-    
-    padding: 5px 10px 5px 45px;
-    margin: 10px 10px 10px 10px;
-}    */
 
 input.search_bar:hover{
     cursor: pointer;
@@ -169,6 +140,11 @@ svg{
     height: 27.98px;
 }
 
+svg.icons_main_settings{
+    width: 17.98px;
+    height: 27.98px;
+}
+
 svg#facelogo{
     width: 40px;
     height: 39.78px;
@@ -203,7 +179,7 @@ svg#facelogo{
     -moz-box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
     box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
 
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -264,7 +240,7 @@ svg#facelogo{
     -moz-box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
     box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.26);
 
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -273,9 +249,9 @@ svg#facelogo{
     position: absolute;
     z-index: 1;
 
-    margin-top: 2px;
+    margin: 9px 0px 0px -3px;
 
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
 
@@ -290,12 +266,52 @@ svg#facelogo{
 
 .tooltip_circle span.tooltiptext#tooltip-menu{
     width: 60px;
-    margin-left: 30px;
+}
+
+.tooltip_circle span.tooltiptext#tooltip-menssenger{
+    width: 100px;
+    margin: 9px 0px 0px -22px;
 }
 
 
+div.main_settings div.number_of_notifications{
+    width: 20px;
+    height: 20px;
+
+    background-color: #E41E3F;
+
+    border-radius: 45%;
+
+    margin: -46px 0px 0px 27px;
+    padding-right: 2px;
+
+    position: absolute;
+   
+    text-align: center;
+}
+
+div.number{
+    width: 100%;
+    height: 100%;
+
+    font-size: 12px;
+    color: white;
+
+    margin-top: -8px;
+}
+
+
+.tooltip_circle span.tooltiptext#tooltip-notification{
+    width: 100px;
+    margin: 9px 0px 0px -24px;
+}
+
+.tooltip_circle span.tooltiptext#tooltip-account{
+    width: 60px;
+}
+
 div .main_settings{
-    width: 204x;
+    width: 264x;
     height: 56px;
 
     margin: 0 15px 0 0;
@@ -306,24 +322,28 @@ div .main_settings{
 }
 
 .circle_icons{
-    width: 39.98px;
-    height: 39.98px;
+    width: 31.98px;
+    height: 31.98px;
 
     margin-inline: 0 0 0 10px;
     padding: 5px 5px 5px 5px;
 
     border-radius: 50%;
 
+    margin-right: 8px;
+
     display: flex;
     align-items: center;
     justify-content:center;
+
+    background-color: #d8dadf79;
     
 }
 
 .circle_icons:hover{
     color: #057BF8;
     cursor: pointer;
-    background-color: #dddfe2;
+    background-color: #D8DADF;
 }
 
 .main-content-container{
@@ -357,10 +377,6 @@ div .main_settings{
 
     background-color: red;
 }
-
-
-
-
 
 .xe3v8dz{
     fill: white;
